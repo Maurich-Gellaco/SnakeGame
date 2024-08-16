@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-image: url('snake.jpg');
+    background-size: cover; 
+    background-position: center;
+}
+
+.heading {
+    margin-bottom: 5px;
+    font-size: 60px;
+    font-family: "Matemasie", sans-serif;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    animation: headingAnimation 2s infinite;
+}
+.by {
+    margin-top: 1px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-family: "Quicksand", sans-serif;
+    color: #1a430a; 
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(208, 225, 109, 0.7);
+   
+}
+
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#gameCanvas {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: black;
+    border: 2px solid #1e4908;
+}
+
+.score-container {
+    margin-top: 10px;
+    font-size: 30px;
+    border: 1px solid #f4ecec;
+    font-family: "Quicksand", sans-serif;
+    color: #8a3e08;
+
+}
+@keyframes headingAnimation {
+    0% {
+        transform: translateY(0);
+        color: #d9e57a;
+    }
+    50% {
+        transform: translateY(-10px);
+        color: #ffcc00; 
+    }
+    100% {
+        transform: translateY(0);
+        color: #286d11;
+    }
+}
